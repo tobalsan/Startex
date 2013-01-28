@@ -1,5 +1,6 @@
 app/cache/
 app/logs/
+app/parameters.yml
 vendor/
 web/.sass-cache
 composer.lock
