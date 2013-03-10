@@ -25,6 +25,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 ));
 
 $app->register(new Silex\Provider\ServiceControllerServiceProvider()); // Register ServiceController service provider to use controllers as service
+$app->register(new Silex\Provider\SessionServiceProvider()); // Session service provider
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider()); // Twig templates
 $app['twig']->addExtension(new \Entea\Twig\Extension\AssetExtension($app));
