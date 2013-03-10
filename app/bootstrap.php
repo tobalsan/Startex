@@ -29,5 +29,8 @@ $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider()); // Twig templates
 $app['twig']->addExtension(new \Entea\Twig\Extension\AssetExtension($app));
 
-// Model managers
-$app['some_service'] = $app->share(function ($app) { return new SmartRock\MainBundle\Model\JmoopaManager($app['db']); });
+/*
+Model managers
+An example of how to include a custom model manager if you choose to use this coding pattern
+*/
+// $app['some_service'] = $app->share(function ($app) { return new SmartRock\MainBundle\Model\MyCustomManager($app['db']); });

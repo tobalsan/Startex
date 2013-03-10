@@ -1,5 +1,5 @@
 db:
-    driver   : mysql
+    driver   : pdo_mysql
     host     : localhost
     dbname   : database_name
     user     : username
