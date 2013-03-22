@@ -11,7 +11,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $app = new Silex\Application();
 
 // Config
-$app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__."/parameters.yml"));de
+$app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__."/parameters.yml"));
 
 // DBAL Layer
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
@@ -28,7 +28,6 @@ $app->register(new Silex\Provider\ServiceControllerServiceProvider()); // Regist
 $app->register(new Silex\Provider\SessionServiceProvider()); // Session service provider
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 $app->register(new Silex\Provider\TwigServiceProvider()); // Twig templates
-$app['twig']->addExtension(new \Entea\Twig\Extension\AssetExtension($app));
 
 /*
 Model managers
