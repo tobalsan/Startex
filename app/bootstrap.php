@@ -17,6 +17,7 @@ $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__."/parameters.yml"))
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
         'driver'   => $app['db']['driver'],
+        // 'path'     => __DIR__.'/app.db', # if you use sqlite
         'host'     => $app['db']['host'],
         'dbname'   => $app['db']['dbname'],
         'user'     => $app['db']['user'],
