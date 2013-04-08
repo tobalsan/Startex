@@ -1,0 +1,23 @@
+{% if app.session.flashBag.has('global/success') %}
+    <div class="flash alert alert-success">
+        {% for message in app.session.flashBag.get('global/success') %}
+            {{ message|raw }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if app.session.flashBag.has('global/notice') %}
+    <div class="flash alert alert-notice">
+        {% for message in app.session.flashBag.get('global/notice') %}
+            {{ message|raw }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if app.session.flashBag.has('global/error') %}
+    <div class="flash alert alert-error">
+        {% for message in app.session.flashBag.get('global/error') %}
+            {{ message|raw }}
+        {% endfor %}
+    </div>
+{% endif %}

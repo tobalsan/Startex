@@ -9,6 +9,7 @@
 <body>
     {% block body %}
         <div class="container">
+            {% include 'flashes.html.twig' %}
             {% block content %}{% endblock %}
         </div>
     {% endblock %}
