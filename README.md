@@ -15,7 +15,7 @@ Installation is pretty straightforward:
 1. Clone this repo
 2. Download composer: `curl -s http://getcomposer.org/installer | php`
 3. Run `$ php composer.phar install` and `php composer.phar update`
-4. If you plan to use a database, do `cp app/parameters.yml.sample app/parameters.yml` and edit connection parameters according to your configuration
+4. Run `cp app/parameters.yml.sample app/parameters.yml` and edit connection parameters according to your configuration
 5. Done
 
 The code base is really simple, and well commented, so you should really find your way easily. The files and folders have been structured following Symfony2 conventions. If you have any question just drop a message.

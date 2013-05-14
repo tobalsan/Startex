@@ -19,7 +19,7 @@ require_once __DIR__ . '/../src/SmartRock/MainBundle/smartrockMainBundle.php';
 // Twig customization: add "asset" function from Symfony2
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
     $asset = new \Twig_SimpleFunction('asset', function ($url) use ($app) {
-        $assetDir = isset($ap->options['asset.directory']) ? $app['asset.directory'] : $app['request']->getBasePath();
+        $assetDir = isset($app->options['asset.directory']) ? $app['asset.directory'] : $app['request']->getBasePath();
 
         return sprintf('%s/%s', $assetDir, ltrim($url, '/'));
     });
