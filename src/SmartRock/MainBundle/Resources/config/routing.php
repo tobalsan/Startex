@@ -1,3 +1,3 @@
 <?php
 
-$app->get('/', "PageController:indexAction");
+$app->get('/', "PageController:indexAction")->bind('homepage');

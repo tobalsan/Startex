@@ -8,8 +8,6 @@
 
 require_once __DIR__ . '/bootstrap.php';
 
-$app['debug'] = true;
-
 // Include routing
 require_once __DIR__ . '/routing.php';
 
