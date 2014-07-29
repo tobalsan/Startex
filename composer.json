@@ -1,10 +1,12 @@
 {
     "require": {
-        "silex/silex": "1.0.*@dev",
-        "silex/web-profiler": "1.0.*",
+        "php": ">=5.3.3",
+        "silex/silex": "~1.0",
+        "silex/web-profiler": "~1.0",
         "twig/twig": ">=1.8,<2.0-dev",
         "symfony/twig-bridge": "~2.2",
         "symfony/yaml": "2.1.*",
+        "symfony/web-profiler-bundle": ">=2.2,<2.4-dev",
     	"doctrine/dbal": "2.3.2",
         "igorw/config-service-provider": "v1.1.1"
     },
